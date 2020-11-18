@@ -33,7 +33,7 @@ const displayTodos = function() {
   for (let i = 0; i < todos.length; i++) {
     const todo = todos[i];
     const num = i + 1;
-    console.log(num + '. ' + todo.text);
+    todo.isComplete !== true ? console.log(num + '. ' + todo.text + INCOMPLETE_MARK) : console.log(num + '. ' + todo.text + COMPLETE_MARK);
   }
 }
 
